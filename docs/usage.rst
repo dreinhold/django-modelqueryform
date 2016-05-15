@@ -68,7 +68,7 @@ If we want our users to be able to select for (non)-accredited institions we wou
 
    class MyModelQueryForm(modelqueryform.ModelQueryForm):
        model = MyModel
-       inclue = ['age','employed','degree', 'institution__accredited']
+       include = ['age','employed','degree', 'institution__accredited']
        traverse_fields = ['institution',]
        
 .. note::
